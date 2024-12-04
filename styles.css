@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+}
+
+.app {
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.hidden {
+    display: none;
+}
+
+#time-display {
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+.timer-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Align icons and name properly */
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.project-actions {
+    display: flex;
+    gap: 5px; /* Reduced spacing between icons */
+    position: absolute; /* Absolute position for icons */
+    right: 0; /* Align icons to the far right */
+}
+
+.project-actions button {
+    background: none; /* Remove background */
+    border: none; /* Remove borders */
+    font-size: 1.5rem; /* Icon size */
+    cursor: pointer;
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    color: #333; /* Default color */
+    transition: color 0.3s;
+}
+
+.project-actions button:hover {
+    color: darkred; /* Highlight color on hover */
+}
+
+#project-title {
+    flex-grow: 1;
+    text-align: center; /* Center the project name */
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+/* Start button active state */
+#start-btn.active {
+    background: #28a745; /* Green background when active */
+    color: white;
+}
+
+.project-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+}
+
+.color-options {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.color-options div {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.color-options div:hover {
+    transform: scale(1.2);
+}
+
+#project-title {
+    margin: 0 auto; /* Center the project name */
+    font-size: 1.2rem; /* Adjust size for visibility */
+    text-align: center; /* Ensure text stays centered */
+    width: 100%; /* Take full width for proper centering */
+}

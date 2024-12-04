@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Time Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app">
+        <h1>Project Time Tracker</h1>
+        <div class="projects">
+            <div id="project-list">
+                <!-- User-added projects will appear here -->
+            </div>
+            <button id="add-project-btn">Add New Project</button>
+        </div>
+        <div class="timer hidden">
+            <div class="timer-header">
+                <div class="project-actions">
+                    <button id="rename-project-btn" title="Rename Project">✏️</button>
+                    <button id="change-color-btn" title="Change Project Color">🖍️</button>
+                    <button id="delete-project-btn" title="Delete Project">🗑️</button>
+                </div>
+                <h2 id="project-title"></h2>
+            </div>
+            <p id="time-display">00:00:00</p>
+            <div id="color-picker" class="hidden">
+                <p>Choose a color:</p>
+                <div class="color-options">
+                    <!-- Color options will be dynamically generated -->
+                </div>
+            </div>
+            <div class="controls">
+                <button id="start-btn">Start</button>
+                <button id="pause-btn">Pause</button>
+                <button id="reset-btn">Reset</button>
+            </div>
+            <button id="back-btn">Back</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
